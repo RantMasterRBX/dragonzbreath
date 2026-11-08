@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Hour — Links</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      color: #fff8f0;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      background: linear-gradient(160deg, #34234f 0%, #a34f72 48%, #f69a65 100%);
+    }
+
+    main { width: min(100%, 520px); }
+
+    nav { margin-bottom: 3rem; }
+
+    nav a {
+      margin: 0 0.75rem;
+      color: #fff8f0;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      letter-spacing: -0.05em;
+    }
+
+    p { margin: 0 0 2rem; color: #ffe8dc; }
+
+    .links {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .links a {
+      padding: 1rem;
+      border: 1px solid #fff8f077;
+      border-radius: 14px;
+      color: #fff8f0;
+      text-decoration: none;
+      background: #ffffff12;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .links a:hover {
+      transform: translateY(-2px);
+      background: #ffffff26;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="links.html">Links</a>
+    </nav>
+
+    <h1>My Links</h1>
+    <p>Stay a while, or follow along elsewhere.</p>
+
+    <div class="links">
+      <a href="https://example.com">Website</a>
+      <a href="https://instagram.com">Instagram</a>
+      <a href="https://youtube.com">YouTube</a>
+      <a href="https://github.com">GitHub</a>
+    </div>
+  </main>
+</body>
+</html>

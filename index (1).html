@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Hour — Home</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      color: #fff8f0;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      background: linear-gradient(160deg, #34234f 0%, #a34f72 48%, #f69a65 100%);
+    }
+
+    main { max-width: 650px; }
+
+    nav { margin-bottom: 4rem; }
+
+    nav a {
+      margin: 0 0.75rem;
+      color: #fff8f0;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .sun {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+      background: linear-gradient(#ffe49a, #ff9a72);
+      box-shadow: 0 0 70px #ffbd7a88;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      letter-spacing: -0.05em;
+    }
+
+    p {
+      margin: 1rem 0 2rem;
+      color: #ffe8dc;
+      font-size: 1.15rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.85rem 1.3rem;
+      border: 1px solid #fff8f0aa;
+      border-radius: 999px;
+      color: #fff8f0;
+      text-decoration: none;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ffffff22;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="links.html">Links</a>
+    </nav>
+
+    <div class="sun" aria-hidden="true"></div>
+    <h1>Golden Hour</h1>
+    <p>A little corner of the internet to slow down and enjoy the view.</p>
+    <a class="button" href="links.html">Find my links</a>
+  </main>
+</body>
+</html>
